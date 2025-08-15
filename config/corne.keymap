@@ -18,7 +18,8 @@
 };
 
 &lt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
+    tapping-term = <125>;
 };
 
 / {
