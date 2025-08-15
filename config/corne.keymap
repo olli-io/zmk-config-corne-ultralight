@@ -19,7 +19,8 @@
 
 &lt {
     flavor = "tap-preferred";
-    tapping-term = <125>;
+    quick-tap-ms = <75>;
+    tapping-term-ms = <125>;
 };
 
 / {
@@ -187,8 +188,6 @@
             label = "TD_LT_BACKSPACE";
             #binding-cells = <0>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
-
-            tapping-term-ms = <200>;
         };
 
         td_lt_space: td_lt_space {
