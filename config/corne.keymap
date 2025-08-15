@@ -18,8 +18,6 @@
 };
 
 &lt {
-    quick-tap-ms = <50>;
-    require-prior-idle-ms = <0>;
     flavor = "balanced";
 };
 
@@ -30,111 +28,155 @@
         left_parens {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <15 16>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <28 27>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         right_parens {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <19 20>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <31 32>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <19 21>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <19 22>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         single_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <8 9>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         slash {
             bindings = <&kp SLASH>;
             key-positions = <7 18>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         slash_2 {
             bindings = <&kp SLASH>;
             key-positions = <19 8>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         combo_14 {
             bindings = <&kp BACKSLASH>;
             key-positions = <32 19>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         greater {
             bindings = <&kp GREATER_THAN>;
             key-positions = <18 19>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <6 7>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         smaller {
             bindings = <&kp LESS_THAN>;
             key-positions = <17 16>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         exclamation {
             bindings = <&kp EXCL>;
             key-positions = <6 5>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <17 18>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <7 9>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         quote_alt {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <2 4>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         et {
             bindings = <&kp AMPS>;
             key-positions = <15 14>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <14 16>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
 
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <20 21>;
+            timeout-ms = <35>
+            require-prior-ms = <40>
         };
     };
 
@@ -143,9 +185,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LT_BACKSPACE";
             #binding-cells = <0>;
-            bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
 
         td_lt_space: td_lt_space {
@@ -202,9 +244,9 @@
 
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp AMPERSAND  &kp SLASH    &kp ASTRK    &kp EQUAL   &kp N7  &kp N8   &kp N9  &kp BACKSPACE  &kp DEL
-&trans  &none     &none   &kp QUESTION   &kp MINUS    &kp PLUS     &kp DOLLAR  &kp N4  &kp N5   &kp N6  &kp N0         &trans
+&trans  &none     &none   &kp QUESTION   &kp TILDE    &kp PLUS     &kp DOLLAR  &kp N4  &kp N5   &kp N6  &kp N0         &trans
 &trans  &none     &none   &kp PIPE       &kp PERCENT  &kp CARET    &kp COLON   &kp N1  &kp N2   &kp N3  &kp DOT        &trans
-                          &trans         &trans       &kp UNDER    &trans      &trans  &kp DOT
+                          &trans         &kp MINUS    &kp UNDER    &trans      &trans  &kp DOT
             >;
 
             label = "num";
