@@ -10,6 +10,19 @@
 
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
+&mt {
+    flavor = "tap-preferred";
+    quick-tap-ms = <50>;
+    retro-tap;
+    require-prior-idle-ms = <50>;
+};
+
+&lt {
+    quick-tap-ms = <50>;
+    require-prior-idle-ms = <0>;
+    flavor = "balanced";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -132,7 +145,7 @@
             #binding-cells = <0>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
         };
 
         td_lt_space: td_lt_space {
@@ -206,6 +219,15 @@
             >;
 
             label = "func";
+        };
+
+        nav2 {
+            bindings = <
+&trans  &kp HOME  &kp UP    &kp END   &kp PAGE_UP    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp DOWN  &kp PAGE_DOWN  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans    &trans         &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
