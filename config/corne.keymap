@@ -13,12 +13,12 @@
 &mt {
     flavor = "tap-preferred";
     quick-tap-ms = <25>;
-    require-prior-idle-ms = <50>;
+    require-prior-idle-ms = <100>;
 };
 
 &lt {
     flavor = "tap-preferred";
-    quick-tap-ms = <30>;  // Reduced from 40ms
+    quick-tap-ms = <40>;  // Reduced from 40ms
     tapping-term-ms = <100>;  // Reduced from 125ms
 };
 
@@ -181,23 +181,6 @@
         };
     };
 
-    behaviors {
-        td_lt_backspace: td_lt_backspace {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
-            quick-tap-ms = <100>;
-            tapping-term-ms = <150>;
-            require-prior-idle-ms = <50>;
-        };
-
-        td_lt_space: td_lt_space {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&kp SPACE>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -212,7 +195,7 @@
 &kp BACKSPACE   &kp Q               &kp W           &kp E                 &kp R      &kp T          &kp Y                  &kp U             &kp I              &kp O              &kp RA(O)               &kp DELETE
 &lt 4 F12       &kp A               &kp S           &kp D                 &kp F      &kp G          &kp H                  &kp J             &kp K              &kp L              &kp P                   &kp RA(F12)
 &kp LEFT_SHIFT  &mt LEFT_CONTROL Z  &mt LEFT_ALT X  &kp C                 &kp V      &kp B          &kp N                  &kp M             &kp COMMA          &mt RIGHT_ALT DOT  &mt LEFT_CONTROL RA(A)  &kp LEFT_SHIFT
-                                                    &mt LEFT_CONTROL ESC  &lt 3 TAB  &lt 1 SPACE    &mt RIGHT_SHIFT ENTER  &td_lt_backspace  &mt RIGHT_GUI DEL
+                                                    &mt LEFT_CONTROL ESC  &lt 3 TAB  &lt 1 SPACE    &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE  &mt RIGHT_GUI DEL
             >;
 
             label = "base";
