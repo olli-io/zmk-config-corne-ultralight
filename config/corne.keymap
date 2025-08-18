@@ -10,6 +10,17 @@
 
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
+
+&mt {
+    flavor = "balanced";
+    quick-tap-ms = <100>;
+};
+
+&lt {
+    flavor = "balanced";
+    quick-tap-ms = <100>; 
+};
+
 / {
     combos {
         compatible = "zmk,combos";
