@@ -184,7 +184,6 @@
     behaviors {
         td_lt_backspace: td_lt_backspace {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT_BACKSPACE";
             #binding-cells = <0>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
             quick-tap-ms = <100>;
@@ -194,7 +193,6 @@
 
         td_lt_space: td_lt_space {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT_SPACE";
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&kp SPACE>;
         };
