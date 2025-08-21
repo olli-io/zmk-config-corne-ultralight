@@ -80,21 +80,14 @@
             require-prior-idle-ms = <100>;
         };
 
-        single_quote_r {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <8 21>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <100>;
-        };
-
-        slash_2 {
+        slash {
             bindings = <&kp SLASH>;
             key-positions = <19 8>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
 
-        combo_14 {
+        backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <32 19>;
             timeout-ms = <35>;
@@ -176,14 +169,14 @@
             key-positions = <3 16>;
         };
 
-        single_q_2 {
+        single_quote_r {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <3 2>;
+            key-positions = <3 14>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <6 7>;
+            key-positions = <8 21>;
         };
     };
 
