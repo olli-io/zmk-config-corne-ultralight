@@ -272,6 +272,8 @@
 &trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &mt LGUI ESC  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "mac";
         };
     };
 };
