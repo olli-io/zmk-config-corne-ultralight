@@ -174,9 +174,39 @@
             key-positions = <3 14>;
         };
 
+        single_quote_l {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <8 21>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <31 30>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <40 38>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <37 40>;
+        };
+
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <8 21>;
+            key-positions = <16 19>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <28 31>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <4 7>;
         };
     };
 
@@ -225,10 +255,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none     &none   &kp RA(N4)  &kp SLASH    &kp ASTRK    &kp EQUAL   &kp N7  &kp N8   &kp N9  &kp BACKSPACE  &kp DEL
-&trans  &kp EXCL  &kp AT  &kp HASH    &kp PLUS     &kp TILDE    &kp DOLLAR  &kp N4  &kp N5   &kp N6  &kp N0         &trans
-&trans  &none     &none   &none       &kp PERCENT  &kp CARET    &kp COLON   &kp N1  &kp N2   &kp N3  &kp DOT        &trans
-                          &trans      &kp MINUS    &kp UNDER    &trans      &trans  &kp DOT
+&trans  &none     &none   &kp RA(N4)  &kp CARET     &none        &kp EQUAL   &kp N7  &kp N8   &kp N9  &kp BACKSPACE  &kp DEL
+&trans  &kp EXCL  &kp AT  &kp HASH    &kp PLUS      &kp TILDE    &kp DOLLAR  &kp N4  &kp N5   &kp N6  &kp N0         &trans
+&trans  &none     &none   &none       &kp ASTERISK  &none        &kp COLON   &kp N1  &kp N2   &kp N3  &kp DOT        &trans
+                          &trans      &kp MINUS     &kp UNDER    &trans      &trans  &kp DOT
             >;
 
             label = "num";
