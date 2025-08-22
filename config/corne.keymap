@@ -10,7 +10,7 @@
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5
-#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
+#define THUMBS LH2 LH1 LH0 RH0 RH1 RH3
 
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
@@ -22,6 +22,34 @@
 &lt {
     flavor = "balanced";
     quick-tap-ms = <100>;
+};
+
+/ {
+    behaviors {
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // List of keys on the right side of the keyboard
+            hold-trigger-on-release;
+        };
+
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // List of keys on the left side of the keyboard
+            hold-trigger-on-release;
+        };
+    };
 };
 
 / {
@@ -231,6 +259,11 @@
         minus_alt {
             bindings = <&kp MINUS>;
             key-positions = <33 32>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <26 28>;
         };
     };
 
