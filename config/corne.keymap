@@ -174,11 +174,6 @@
             key-positions = <3 14>;
         };
 
-        single_quote_l {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <8 21>;
-        };
-
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <31 30>;
@@ -196,17 +191,32 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <16 19>;
+            key-positions = <7 9>;
         };
 
         asterisk {
             bindings = <&kp ASTERISK>;
-            key-positions = <28 31>;
+            key-positions = <31 33>;
         };
 
         at {
             bindings = <&kp AT>;
-            key-positions = <4 7>;
+            key-positions = <16 19>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <19 8 21>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <20 9>;
+        };
+
+        eur {
+            bindings = <&kp RA(N4)>;
+            key-positions = <16 14 3>;
         };
     };
 
