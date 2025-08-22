@@ -72,7 +72,7 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <21 20>;
+            key-positions = <21 19>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
