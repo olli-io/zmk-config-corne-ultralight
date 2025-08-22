@@ -34,6 +34,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
@@ -46,6 +47,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
@@ -265,7 +267,6 @@
             bindings = <&kp PERCENT>;
             key-positions = <20 9>;
         };
-
     };
 
     keymap {
@@ -279,10 +280,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp BACKSPACE     &kp Q               &kp W           &kp E             &kp R      &kp T          &kp Y                  &kp U            &kp I              &kp O              &kp RA(P)        &kp DELETE
-&lt 4 TAB         &kp A               &kp S           &kp D             &kp F      &kp G          &kp H                  &kp J            &kp K              &kp L              &kp P            &kp RA(A)
-&kp LEFT_CONTROL  &mt LEFT_CONTROL Z  &mt LEFT_ALT X  &kp C             &kp V      &kp B          &kp N                  &kp M            &kp COMMA          &mt RIGHT_ALT DOT  &mt LCTRL RA(O)  &kp LEFT_SHIFT
-                                                      &mt LEFT_GUI ESC  &lt 3 TAB  &lt 1 SPACE    &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE  &mt RIGHT_GUI DEL
+&kp BACKSPACE     &kp Q               &kp W                &kp E             &kp R             &kp T          &kp Y                  &kp U                     &kp I              &kp O                 &kp RA(P)          &kp DELETE
+&lt 4 TAB         &hml LEFT_SHIFT A   &hml LEFT_CONTROL S  &hml LEFT_ALT D   &hml RIGHT_GUI F  &kp G          &kp H                  &hmr RIGHT_GUI RIGHT_GUI  &hmr RIGHT_ALT K   &hmr RIGHT_CONTROL L  &hmr LEFT_SHIFT P  &kp RA(A)
+&kp LEFT_CONTROL  &mt LEFT_CONTROL Z  &mt LEFT_ALT X       &kp C             &kp V             &kp B          &kp N                  &kp M                     &kp COMMA          &mt RIGHT_ALT DOT     &mt LCTRL RA(O)    &kp LEFT_SHIFT
+                                                           &mt LEFT_GUI ESC  &lt 3 TAB         &lt 1 SPACE    &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE           &mt RIGHT_GUI DEL
             >;
 
             label = "root";
