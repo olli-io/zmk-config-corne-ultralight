@@ -199,6 +199,16 @@
             require-prior-idle-ms = <100>;
         };
 
+        eur {
+            bindings = <&kp RA(N4)>;
+            key-positions = <4 2>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <26 28>;
+        };
+
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <3 2>;
@@ -221,14 +231,19 @@
             key-positions = <40 38>;
         };
 
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <20 21>;
+        };
+
         minus {
             bindings = <&kp MINUS>;
             key-positions = <37 40>;
         };
 
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <20 21>;
+        minus_alt {
+            bindings = <&kp MINUS>;
+            key-positions = <33 32>;
         };
 
         asterisk {
@@ -251,20 +266,6 @@
             key-positions = <20 9>;
         };
 
-        eur {
-            bindings = <&kp RA(N4)>;
-            key-positions = <4 2>;
-        };
-
-        minus_alt {
-            bindings = <&kp MINUS>;
-            key-positions = <33 32>;
-        };
-
-        hash {
-            bindings = <&kp HASH>;
-            key-positions = <26 28>;
-        };
     };
 
     keymap {
