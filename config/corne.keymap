@@ -198,6 +198,11 @@
             key-positions = <37 40>;
         };
 
+        minus_alt {
+            bindings = <&kp MINUS>;
+            key-positions = <19 21>;
+        };
+
         plus {
             bindings = <&kp PLUS>;
             key-positions = <7 9>;
@@ -227,6 +232,7 @@
             bindings = <&kp RA(N4)>;
             key-positions = <4 2>;
         };
+
     };
 
     keymap {
