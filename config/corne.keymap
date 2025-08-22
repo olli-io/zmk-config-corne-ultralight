@@ -200,12 +200,12 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <7 9>;
+            key-positions = <20 21>;
         };
 
         asterisk {
             bindings = <&kp ASTERISK>;
-            key-positions = <31 33>;
+            key-positions = <8 9>;
         };
 
         at {
@@ -230,7 +230,7 @@
 
         minus_alt {
             bindings = <&kp MINUS>;
-            key-positions = <19 21>;
+            key-positions = <33 32>;
         };
     };
 
