@@ -334,13 +334,22 @@
 
         functions {
             bindings = <
-&none  &none           &none     &none     &none      &none     &kp F10  &kp F1  &kp F2  &kp F3  &none  &bt BT_NXT
+&none  &none           &none     &none     &none      &none     &kp F10  &kp F7  &kp F8  &kp F9  &none  &bt BT_NXT
 &none  &kp LEFT_SHIFT  &kp RGUI  &kp RALT  &kp LCTRL  &none     &kp F11  &kp F4  &kp F5  &kp F6  &none  &bt BT_NXT
-&none  &none           &none     &none     &none      &none     &kp F12  &kp F7  &kp F8  &kp F9  &none  &bt BT_CLR
+&none  &none           &none     &none     &none      &none     &kp F12  &kp F1  &kp F2  &kp F3  &none  &bt BT_CLR
                                  &trans    &trans     &trans    &trans   &trans  &trans
             >;
 
             label = "func";
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
