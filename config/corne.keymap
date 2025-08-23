@@ -12,12 +12,14 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
+    hold-trigger-on-release;
 };
 
 &lt {
     flavor = "balanced";
-    quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
+    hold-trigger-on-release;
 };
 
 / {
