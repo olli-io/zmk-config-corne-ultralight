@@ -280,10 +280,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q  &kp W              &kp E             &kp R                &kp T          &kp Y           &kp U                 &kp I                &kp O               &kp RA(O)  &kp DELETE
-&kp MINUS  &kp A  &hml LEFT_SHIFT S  &hml LEFT_ALT D   &hml LEFT_CONTROL F  &kp G          &kp H           &hmr RIGHT_CONTROL J  &hmr RIGHT_ALT K     &hmr RIGHT_SHIFT L  &kp P      &kp RA(A)
-&kp ENTER  &kp Z  &kp X              &kp C             &kp V                &kp B          &kp N           &kp M                 &kp COMMA            &kp DOT             &kp ENTER  &kp RA(F14)
-                                     &mtcw LEFT_GUI 0  &lt 3 TAB            &lt 1 SPACE    &sk LEFT_SHIFT  &lt 2 BACKSPACE       &mt RIGHT_GUI UNDER
+&kp ESC     &kp Q  &kp W              &kp E               &kp R                &kp T          &kp Y                 &kp U                 &kp I                &kp O               &kp RA(O)  &kp DELETE
+&caps_word  &kp A  &hml LEFT_SHIFT S  &hml LEFT_ALT D     &hml LEFT_CONTROL F  &kp G          &kp H                 &hmr RIGHT_CONTROL J  &hmr RIGHT_ALT K     &hmr RIGHT_SHIFT L  &kp P      &kp RA(A)
+&kp ENTER   &kp Z  &kp X              &kp C               &kp V                &kp B          &kp N                 &kp M                 &kp COMMA            &kp DOT             &kp MINUS  &kp RA(F14)
+                                      &mt LEFT_GUI TILDE  &lt 3 TAB            &lt 1 SPACE    &mt LEFT_SHIFT ENTER  &lt 2 BACKSPACE       &mt RIGHT_GUI UNDER
             >;
 
             label = "root";
@@ -297,10 +297,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp BACKSPACE   &kp HOME               &kp UP_ARROW        &kp END                  &kp PAGE_UP      &kp PAGE_UP    &kp HOME         &kp UP         &kp END    &none  &trans
-&trans  &kp LEFT_SHIFT  &hml RIGHT_SHIFT LEFT  &hml LEFT_ALT DOWN  &hml LEFT_CONTROL RIGHT  &kp PAGE_DOWN    &kp PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT  &none  &trans
-&trans  &none           &none                  &none               &none                    &none            &none          &kp LG(P)        &kp LG(F2)     &none      &none  &trans
-                                               &trans              &none                    &kp SPACE        &trans         &lt 2 BACKSPACE  &kp RIGHT_GUI
+&trans  &kp BACKSPACE  &kp HOME               &kp UP_ARROW        &kp END                  &kp PAGE_UP      &kp PAGE_UP    &kp HOME         &kp UP         &kp END    &none  &trans
+&trans  &none          &hml RIGHT_SHIFT LEFT  &hml LEFT_ALT DOWN  &hml LEFT_CONTROL RIGHT  &kp PAGE_DOWN    &kp PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT  &none  &trans
+&trans  &none          &none                  &none               &none                    &none            &none          &kp LG(P)        &kp LG(F2)     &none      &none  &trans
+                                              &trans              &none                    &kp SPACE        &trans         &lt 2 BACKSPACE  &kp RIGHT_GUI
             >;
 
             label = "nav";
