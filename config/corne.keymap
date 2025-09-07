@@ -70,16 +70,18 @@
 
         left_parens {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <15 16>;
+            key-positions = <4 3>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         left_bracket {
@@ -87,20 +89,23 @@
             key-positions = <28 27>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         right_parens {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <7 8>;
+            key-positions = <19 20>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <19 20>;
+            key-positions = <8 7>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         right_bracket {
@@ -108,6 +113,7 @@
             key-positions = <31 32>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         colon {
@@ -115,6 +121,7 @@
             key-positions = <21 19>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         semicolon {
@@ -122,6 +129,7 @@
             key-positions = <22 19>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         slash {
@@ -129,6 +137,7 @@
             key-positions = <19 8>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         backslash {
@@ -136,13 +145,15 @@
             key-positions = <32 19>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
-            key-positions = <19 18>;
+            key-positions = <20 21>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         greater {
@@ -150,6 +161,7 @@
             key-positions = <31 20>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         smaller {
@@ -157,20 +169,23 @@
             key-positions = <15 28>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         exclamation {
             bindings = <&kp EXCL>;
-            key-positions = <18 17>;
+            key-positions = <15 14>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <28 31>;
+            key-positions = <3 14>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         quotes_r {
@@ -178,6 +193,7 @@
             key-positions = <7 21>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         quotes_l {
@@ -185,23 +201,21 @@
             key-positions = <4 14>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
-        };
-
-        single_quote_l {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <3 14>;
+            layers = <0 1 2 3>;
         };
 
         single_quote_r {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <8 21>;
+            layers = <0 1 2 3>;
         };
 
         et {
             bindings = <&kp AMPS>;
-            key-positions = <15 14>;
+            key-positions = <3 2>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         dollar {
@@ -209,63 +223,68 @@
             key-positions = <14 16>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         eur {
             bindings = <&kp RA(N4)>;
             key-positions = <4 2>;
+            layers = <0 1 2 3>;
         };
 
         hash {
             bindings = <&kp HASH>;
             key-positions = <26 28>;
+            layers = <0 1 2 3>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <3 2>;
+            key-positions = <26 27>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <3 16>;
-        };
-
-        tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <31 30>;
+            layers = <0 1 2 3>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <20 21>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <37 40>;
+            key-positions = <8 9>;
+            layers = <0 1 2 3>;
         };
 
         asterisk {
             bindings = <&kp ASTERISK>;
-            key-positions = <8 9>;
+            key-positions = <32 33>;
+            layers = <0 1 2 3>;
         };
 
         at {
             bindings = <&kp AT>;
             key-positions = <7 9>;
+            layers = <0 1 2 3>;
         };
 
         caret {
             bindings = <&kp CARET>;
             key-positions = <19 8 21>;
+            layers = <0 1 2 3>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <20 9>;
+            layers = <0 1 2 3>;
+        };
+
+        gaming {
+            bindings = <&tog 4>;
+            key-positions = <0 1>;
         };
     };
 
@@ -282,7 +301,7 @@
             bindings = <
 &kp ESC     &kp Q  &kp W              &kp E               &kp R                &kp T          &kp Y                 &kp U                 &kp I                &kp O               &kp RA(O)  &kp DELETE
 &caps_word  &kp A  &hml LEFT_SHIFT S  &hml LEFT_ALT D     &hml LEFT_CONTROL F  &kp G          &kp H                 &hmr RIGHT_CONTROL J  &hmr RIGHT_ALT K     &hmr RIGHT_SHIFT L  &kp P      &kp RA(A)
-&kp ENTER   &kp Z  &kp X              &kp C               &kp V                &kp B          &kp N                 &kp M                 &kp COMMA            &kp DOT             &kp MINUS  &kp RA(F14)
+&kp ENTER   &kp Z  &kp X              &kp C               &kp V                &kp B          &kp N                 &kp M                 &kp COMMA            &kp DOT             &kp MINUS  &kp RA(P)
                                       &mt LEFT_GUI TILDE  &lt 3 TAB            &lt 1 SPACE    &mt LEFT_SHIFT ENTER  &lt 2 BACKSPACE       &mt RIGHT_GUI UNDER
             >;
 
@@ -314,10 +333,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none  &none  &none   &none      &none        &kp BACKSPACE  &kp N7  &kp N8   &kp N9  &kp TAB  &kp C_VOLUME_UP
-&trans  &none  &none  &none   &none      &none        &kp DOLLAR     &kp N4  &kp N5   &kp N6  &kp N0   &kp C_VOL_DN
-&trans  &none  &none  &none   &none      &none        &kp COLON      &kp N1  &kp N2   &kp N3  &kp DOT  &kp C_PLAY_PAUSE
-                      &trans  &kp MINUS  &kp UNDER    &trans         &trans  &kp DOT
+&trans  &none  &none  &none   &none   &none     &kp BACKSPACE  &kp N7  &kp N8  &kp N9  &kp TAB  &kp C_VOLUME_UP
+&trans  &none  &none  &none   &none   &none     &kp DOLLAR     &kp N4  &kp N5  &kp N6  &kp N0   &kp C_VOL_DN
+&trans  &none  &none  &none   &none   &none     &kp COLON      &kp N1  &kp N2  &kp N3  &kp DOT  &kp C_PLAY_PAUSE
+                      &trans  &trans  &trans    &trans         &trans  &trans
             >;
 
             label = "numr";
@@ -325,13 +344,22 @@
 
         numpad_left_and_functions {
             bindings = <
-&kp C_VOL_UP      &kp BACKSPACE  &kp N7                     &kp N8            &kp N9                &kp ENTER     &kp F10  &kp F7  &kp F8  &kp F9  &trans  &bt BT_NXT
-&kp C_VOL_DN      &kp DOLLAR     &hml RIGHT_SHIFT NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_CONTROL N6  &kp N0        &kp F11  &kp F4  &kp F5  &kp F6  &trans  &bt BT_PRV
+&kp C_VOL_UP      &kp BACKSPACE  &kp N7                     &kp N8            &kp N9                &kp DELETE    &kp F10  &kp F7  &kp F8  &kp F9  &trans  &bt BT_NXT
+&kp C_VOL_DN      &kp ENTER      &hml RIGHT_SHIFT NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_CONTROL N6  &kp N0        &kp F11  &kp F4  &kp F5  &kp F6  &trans  &bt BT_PRV
 &kp C_PLAY_PAUSE  &kp COLON      &kp N1                     &kp N2            &kp N3                &kp PERIOD    &kp F12  &kp F1  &kp F2  &kp F3  &trans  &bt BT_CLR
                                                             &trans            &trans                &trans        &trans   &trans  &trans
             >;
 
             label = "numl";
+        };
+
+        gaming {
+            bindings = <
+&kp ESC    &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y   &kp U   &kp I      &kp O    &kp O      &trans
+&kp TAB    &kp A  &kp S  &kp D      &kp F     &kp G        &kp H   &kp J   &kp K      &kp L    &kp P      &kp A
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp MINUS  &trans
+                         &kp LCTRL  &kp LALT  &kp SPACE    &trans  &trans  &trans
+            >;
         };
     };
 };
