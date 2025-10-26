@@ -326,11 +326,11 @@
         };
 
         extra_1 {
-            status = "reserved"
+            status = "reserved";
         };
 
         extra_2 {
-            status = "reserved"
+            status = "reserved";
         };
     };
 };
