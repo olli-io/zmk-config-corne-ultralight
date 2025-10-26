@@ -331,6 +331,6 @@
 
         extra_2 {
             status = "reserved"
-        }
+        };
     };
 };
