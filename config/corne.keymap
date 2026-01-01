@@ -45,6 +45,10 @@
     hold-trigger-on-release;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
     behaviors {
         hml: home_row_mod_left {
