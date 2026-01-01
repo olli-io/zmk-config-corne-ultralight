@@ -288,6 +288,11 @@
             bindings = <&kp TILDE>;
             key-positions = <31 33>;
         };
+
+        mac-to-win-layer {
+            bindings = <&tog 5>;
+            key-positions = <5 6>;
+        };
     };
 
     keymap {
