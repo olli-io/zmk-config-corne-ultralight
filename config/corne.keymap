@@ -13,11 +13,25 @@
 
 #define TAPPING_TERM_MS 200
 #define QUICK_TAP_MS 175
-#define REQUIRE_PRIOR_IDLE_MS 300
-#define COMBO_TIMEOUT_MS 35
-#define COMBO_REQUIRE_PRIOR_IDLE_MS 200
+#define REQUIRE_PRIOR_IDLE_MS 150
+#define COMBO_TIMEOUT_MS 45
+#define COMBO_REQUIRE_PRIOR_IDLE_MS 100
 
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
+
+&mmv {
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+    time-to-max-speed-ms = <70>;
+    acceleration-exponent = <2>;
+};
+
+&msc {
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <2>;
+};
 
 &mt {
     flavor = "balanced";
