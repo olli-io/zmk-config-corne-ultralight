@@ -45,9 +45,7 @@
     hold-trigger-on-release;
 };
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS>;
-};
+&caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
     behaviors {
@@ -325,10 +323,10 @@
         navigation {
             label = "nav";
             bindings = <
-&kp C_NEXT      &none           &kp BACKSPACE           &kp PAGE_DOWN       &kp PAGE_UP       &kp DELETE       &kp BACKSPACE  &kp PAGE_DOWN    &kp PAGE_UP    &kp DEL      &none  &trans
-&kp C_PREVIOUS  &kp LEFT_SHIFT  &hml LEFT_CONTROL LEFT  &hml LEFT_ALT DOWN  &hml LEFT_GUI UP  &kp RIGHT        &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT    &none  &trans
-&kp C_MUTE      &none           &none                   &none               &none             &kp PAGE_DOWN    &kp HOME       &none            &none          &kp LS(END)  &none  &trans
-                                                        &trans              &none             &kp SPACE        &trans         &lt 4 BACKSPACE  &kp RIGHT_GUI
+&kp C_NEXT      &kp BACKSPACE   &kp BACKSPACE           &kp PAGE_DOWN       &kp PAGE_UP       &kp DELETE    &kp BACKSPACE  &kp PAGE_DOWN    &kp PAGE_UP    &kp DEL      &none  &trans
+&kp C_PREVIOUS  &kp LEFT_SHIFT  &hml LEFT_CONTROL LEFT  &hml LEFT_ALT DOWN  &hml LEFT_GUI UP  &kp RIGHT     &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT    &none  &trans
+&kp C_MUTE      &none           &kp HOME                &none               &kp RET           &kp END       &kp HOME       &none            &none          &kp LS(END)  &none  &trans
+                                                        &trans              &none             &kp SPACE     &trans         &lt 4 BACKSPACE  &kp RIGHT_GUI
             >;
         };
 
