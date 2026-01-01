@@ -291,13 +291,24 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q              &kp W            &kp E               &kp R                &kp T          &kp Y                 &kp U                 &kp I                &kp O             &kp RA(O)           &kp DELETE
-&caps_word  &hml LEFT_SHIFT A  &hml LEFT_GUI S  &hml LEFT_ALT D     &hml LEFT_CONTROL F  &kp G          &kp H                 &hmr RIGHT_CONTROL J  &hmr RIGHT_ALT K     &hmr RIGHT_GUI L  &hmr RIGHT_SHIFT P  &kp RA(A)
-&kp LCTRL   &kp Z              &kp X            &kp C               &kp V                &kp B          &kp N                 &kp M                 &kp COMMA            &kp DOT           &kp MINUS           &kp RA(P)
-                                                &mt LEFT_GUI CARET  &lt 3 TAB            &lt 1 SPACE    &mt LEFT_SHIFT ENTER  &lt 2 BACKSPACE       &mt RIGHT_GUI UNDER
+&kp ESC     &kp Q              &kp W                &kp E               &kp R            &kp T          &kp Y                 &kp U             &kp I             &kp O                 &kp RA(O)           &kp DELETE
+&caps_word  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D     &hml LEFT_GUI F  &kp G          &kp H                 &hmr RIGHT_GUI J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT P  &kp RA(A)
+&kp LCTRL   &kp Z              &kp X                &kp C               &kp V            &kp B          &kp N                 &kp M             &kp COMMA         &kp DOT               &kp MINUS           &kp RA(P)
+                                                    &mt LEFT_GUI CARET  &lt 1 TAB        &lt 2 SPACE    &mt LEFT_SHIFT ENTER  &lt 4 BACKSPACE   &lt 5 UNDER
             >;
 
             label = "root";
+        };
+
+        mouse_numl {
+            bindings = <
+&kp C_VOL_UP      &kp BACKSPACE          &kp N7                      &kp N8            &kp N9            &kp DELETE    &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none  &bt BT_NXT
+&kp C_VOL_DN      &hmr LEFT_SHIFT ENTER  &hml LEFT_CONTROL NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_GUI N6  &kp N0        &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &bt BT_PRV
+&kp C_PLAY_PAUSE  &kp COLON              &kp N1                      &kp N2            &kp N3            &kp PERIOD    &none           &none           &none           &none            &none  &bt BT_CLR
+                                                                     &trans            &trans            &trans        &mkp LCLK       &mkp RCLK       &trans
+            >;
+
+            label = "mous";
         };
 
         navigation {
@@ -308,16 +319,16 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp BACKSPACE   &kp HOME            &kp UP_ARROW        &kp END                  &kp PAGE_UP      &kp PAGE_UP    &kp HOME         &kp UP         &kp END    &none  &trans
-&trans  &kp LEFT_SHIFT  &hml LEFT_GUI LEFT  &hml LEFT_ALT DOWN  &hml LEFT_CONTROL RIGHT  &kp PAGE_DOWN    &kp PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT  &none  &trans
-&trans  &none           &none               &none               &none                    &none            &none          &kp LG(P)        &kp LG(F2)     &none      &none  &trans
-                                            &trans              &none                    &kp SPACE        &trans         &lt 2 BACKSPACE  &kp RIGHT_GUI
+&none   &none           &kp BACKSPACE           &kp PAGE_DOWN       &kp PAGE_UP       &kp DELETE       &kp BACKSPACE  &kp PAGE_DOWN    &kp PAGE_UP    &kp DEL      &none  &trans
+&trans  &kp LEFT_SHIFT  &hml LEFT_CONTROL LEFT  &hml LEFT_ALT DOWN  &hml LEFT_GUI UP  &kp RIGHT        &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT    &none  &trans
+&trans  &none           &none                   &none               &none             &kp PAGE_DOWN    &kp HOME       &none            &none          &kp LS(END)  &none  &trans
+                                                &trans              &none             &kp SPACE        &trans         &lt 4 BACKSPACE  &kp RIGHT_GUI
             >;
 
             label = "nav";
         };
 
-        numr_func {
+        numr {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -325,27 +336,16 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none  &kp F7  &kp F8  &kp F9  &kp F10    &kp BACKSPACE  &kp N7               &kp N8            &kp N9                   &kp TAB              &kp C_VOLUME_UP
-&trans  &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp DOLLAR     &hmr LCTRL NUMBER_4  &hmr LEFT_ALT N5  &hmr RIGHT_GUI NUMBER_6  &hmr RIGHT_SHIFT N0  &kp C_VOL_DN
-&trans  &none  &kp F1  &kp F2  &kp F3  &kp F12    &kp COLON      &kp N1               &kp N2            &kp N3                   &kp DOT              &kp C_PLAY_PAUSE
-                       &trans  &trans  &trans     &trans         &trans               &trans
+&trans  &none           &none      &none     &none     &none      &kp BACKSPACE  &kp N7  &kp N8  &kp N9        &kp TAB              &kp C_VOLUME_UP
+&trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp F11    &kp RET        &kp N4  &kp N5  &kp NUMBER_6  &hmr RIGHT_SHIFT N0  &kp C_VOL_DN
+&trans  &none           &none      &none     &none     &none      &kp COLON      &kp N1  &kp N2  &kp N3        &kp DOT              &kp C_PLAY_PAUSE
+                                   &trans    &trans    &trans     &trans         &trans  &trans
             >;
 
             label = "numr";
         };
 
-        mouse_numl {
-            bindings = <
-&kp C_VOL_UP      &kp BACKSPACE          &kp N7              &kp N8            &kp N9                &kp DELETE    &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none  &bt BT_NXT
-&kp C_VOL_DN      &hmr LEFT_SHIFT ENTER  &hml LGUI NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_CONTROL N6  &kp N0        &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &bt BT_PRV
-&kp C_PLAY_PAUSE  &kp COLON              &kp N1              &kp N2            &kp N3                &kp PERIOD    &none           &none           &none           &none            &none  &bt BT_CLR
-                                                             &trans            &trans                &trans        &mkp LCLK       &mkp RCLK       &trans
-            >;
-
-            label = "numl";
-        };
-
-        extra_1 { status = "reserved"; };
+        func { status = "reserved"; };
 
         extra_2 { status = "reserved"; };
     };
