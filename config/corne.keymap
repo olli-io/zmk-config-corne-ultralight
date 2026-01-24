@@ -193,7 +193,7 @@
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <15 4>;
+            key-positions = <3 14>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
